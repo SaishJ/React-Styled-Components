@@ -1,6 +1,6 @@
 import "./App.css";
 // import styled from "styled-components";
-import StyledButton from "./component/Button";
+import StyledButton, { FancyButton } from "./component/Button";
 
 // const StyledButton = styled.button`
 //   border: 2px solid #4caf50;
@@ -24,6 +24,11 @@ function App() {
         <br />
       </div>
       <StyledButton variant="outline">Styled Button</StyledButton>
+      <div>
+        <br />
+      </div>
+      <FancyButton as="a">Fancy Button</FancyButton>
+      {/* as - is a polymorphic prop => pass anchor tag */}
     </div>
   );
 }
