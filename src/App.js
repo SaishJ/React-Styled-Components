@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+// import styled from "styled-components";
+import StyledButton from "./component/Button";
+
+// const StyledButton = styled.button`
+//   border: 2px solid #4caf50;
+//   background-color: #4caf50;
+//   color: white;
+//   padding: 15px 20px;
+//   text-align: center;
+//   text-decoration: none;
+//   display: inline-block;
+//   font-size: 12px;
+//   cursor: pointer;
+//   transition: 0.5s all ease-out;
+// `;
+// Also make seprate button styled component
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <StyledButton>Styled Button</StyledButton>
     </div>
   );
 }
