@@ -12,6 +12,12 @@ export const StyledButton = styled.button`
   font-size: 12px;
   cursor: pointer;
   transition: 0.5s all ease-out;
+  /* Pseudo Classes */
+  &:hover {
+    background-color: ${(props) =>
+      props.variant !== "outline" ? "#fff" : "#4caf50"};
+    color: ${(props) => (props.variant !== "outline" ? "#4caf50" : "#fff")};
+  }
 `;
 
 export const FancyButton = styled(StyledButton)`
