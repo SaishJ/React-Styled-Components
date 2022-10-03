@@ -11,3 +11,5 @@
 5. [Pass Props and Adding Attributes](https://github.com/SaishJ/React-Styled-Components/commit/8f539b92b7f699a2b25d967373270eae1da6e7ea)
 
 6. [Animations](https://github.com/SaishJ/React-Styled-Components/commit/c8331ef90df567127673490e00ffd3c48858667a)
+
+7. [Theming](https://github.com/SaishJ/React-Styled-Components/commit/4c4fa61c670ec1a7762e16525fbb3980f00516eb)

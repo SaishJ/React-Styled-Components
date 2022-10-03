@@ -1,7 +1,7 @@
 import "./App.css";
 import logo from "./logo.svg";
 // import styled from "styled-components";
-import { ThemeProvider } from "styled-components";
+import { ThemeProvider, createGlobalStyle } from "styled-components";
 import StyledButton, {
   FancyButton,
   SubmitButton,
@@ -32,11 +32,27 @@ const theme = {
     primary: "#fff",
     text: "#000",
   },
+  fontFamily: "Segoe UI",
 };
+
+// Gloabl Styles with props
+const GlobalStyles = createGlobalStyle`
+  button {
+    font-family: ${(props) => props.theme.fontFamily}
+  }
+`;
+
+// Gloabl Styles without props
+// const GloablStyles = createGlobalStyle`
+//   button {
+//     font-family: 'Roboto';
+//   }
+// `;
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
+      <GlobalStyles />
       <div className="App">
         <AnimatedLogo src={logo} />
         <div>
