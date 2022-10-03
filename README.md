@@ -13,3 +13,5 @@
 6. [Animations](https://github.com/SaishJ/React-Styled-Components/commit/c8331ef90df567127673490e00ffd3c48858667a)
 
 7. [Theming](https://github.com/SaishJ/React-Styled-Components/commit/4c4fa61c670ec1a7762e16525fbb3980f00516eb)
+
+8. [Gloabl Styles](https://github.com/SaishJ/React-Styled-Components/commit/9eca3303f6e77bce6e26a7ca9e2126ef00773868)
