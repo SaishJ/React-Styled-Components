@@ -7,3 +7,5 @@
 3. [Extending Styles](https://github.com/SaishJ/React-Styled-Components/commit/6c74b72b296bb137495adde146e970d71a2620c2)
 
 4. [Pseudo Classes](https://github.com/SaishJ/React-Styled-Components/commit/a7d2d4c83ccb1b9a8989666e90ed46d65eaeba82)
+
+5. [Pass Props and Adding Attributes](https://github.com/SaishJ/React-Styled-Components/commit/8f539b92b7f699a2b25d967373270eae1da6e7ea)

@@ -1,6 +1,8 @@
 import "./App.css";
+import logo from "./logo.svg";
 // import styled from "styled-components";
 import StyledButton, { FancyButton, SubmitButton } from "./components/Button";
+import { AnimatedLogo } from "./components/Button.styles";
 
 // const StyledButton = styled.button`
 //   border: 2px solid #4caf50;
@@ -19,6 +21,10 @@ import StyledButton, { FancyButton, SubmitButton } from "./components/Button";
 function App() {
   return (
     <div className="App">
+      <AnimatedLogo src={logo} />
+      <div>
+        <br />
+      </div>
       <StyledButton type="submit">Styled Button</StyledButton>
       <div>
         <br />
