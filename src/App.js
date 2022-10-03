@@ -1,6 +1,6 @@
 import "./App.css";
 // import styled from "styled-components";
-import StyledButton, { FancyButton } from "./component/Button";
+import StyledButton, { FancyButton, SubmitButton } from "./components/Button";
 
 // const StyledButton = styled.button`
 //   border: 2px solid #4caf50;
@@ -19,7 +19,7 @@ import StyledButton, { FancyButton } from "./component/Button";
 function App() {
   return (
     <div className="App">
-      <StyledButton>Styled Button</StyledButton>
+      <StyledButton type="submit">Styled Button</StyledButton>
       <div>
         <br />
       </div>
@@ -29,6 +29,10 @@ function App() {
       </div>
       <FancyButton as="a">Fancy Button</FancyButton>
       {/* as - is a polymorphic prop => pass anchor tag */}
+      <div>
+        <br />
+      </div>
+      <SubmitButton>Submit Button</SubmitButton>
     </div>
   );
 }
