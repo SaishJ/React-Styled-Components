@@ -1,7 +1,12 @@
 import "./App.css";
 import logo from "./logo.svg";
 // import styled from "styled-components";
-import StyledButton, { FancyButton, SubmitButton } from "./components/Button";
+import { ThemeProvider } from "styled-components";
+import StyledButton, {
+  FancyButton,
+  SubmitButton,
+  DarkButton,
+} from "./components/Button";
 import { AnimatedLogo } from "./components/Button.styles";
 
 // const StyledButton = styled.button`
@@ -18,28 +23,45 @@ import { AnimatedLogo } from "./components/Button.styles";
 // `;
 // Also make seprate button styled component
 
+const theme = {
+  dark: {
+    primary: "#000",
+    text: "#fff",
+  },
+  light: {
+    primary: "#fff",
+    text: "#000",
+  },
+};
+
 function App() {
   return (
-    <div className="App">
-      <AnimatedLogo src={logo} />
-      <div>
-        <br />
+    <ThemeProvider theme={theme}>
+      <div className="App">
+        <AnimatedLogo src={logo} />
+        <div>
+          <br />
+        </div>
+        <StyledButton type="submit">Styled Button</StyledButton>
+        <div>
+          <br />
+        </div>
+        <StyledButton variant="outline">Styled Button</StyledButton>
+        <div>
+          <br />
+        </div>
+        <FancyButton as="a">Fancy Button</FancyButton>
+        {/* as - is a polymorphic prop => pass anchor tag */}
+        <div>
+          <br />
+        </div>
+        <SubmitButton>Submit Button</SubmitButton>
+        <div>
+          <br />
+        </div>
+        <DarkButton>Dark Button</DarkButton>
       </div>
-      <StyledButton type="submit">Styled Button</StyledButton>
-      <div>
-        <br />
-      </div>
-      <StyledButton variant="outline">Styled Button</StyledButton>
-      <div>
-        <br />
-      </div>
-      <FancyButton as="a">Fancy Button</FancyButton>
-      {/* as - is a polymorphic prop => pass anchor tag */}
-      <div>
-        <br />
-      </div>
-      <SubmitButton>Submit Button</SubmitButton>
-    </div>
+    </ThemeProvider>
   );
 }
 
